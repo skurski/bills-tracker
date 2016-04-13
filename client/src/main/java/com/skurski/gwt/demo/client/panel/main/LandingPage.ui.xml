@@ -1,0 +1,27 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+        <g:SplitLayoutPanel>
+            <g:north size="50">
+                <g:FlowPanel styleName="northPanel">
+                    <g:HTMLPanel ui:field="northPanel"></g:HTMLPanel>
+                </g:FlowPanel>
+            </g:north>
+            <g:south size="40">
+                <g:FlowPanel styleName="southPanel">
+                    <g:HTMLPanel ui:field="southPanel"></g:HTMLPanel>
+                </g:FlowPanel>
+            </g:south>
+            <g:west size="200">
+                <g:FlowPanel styleName="westPanel">
+                    <g:HTMLPanel ui:field="westPanel"></g:HTMLPanel>
+                </g:FlowPanel>
+            </g:west>
+            <g:center>
+                <g:FlowPanel styleName="centerPanel">
+                    <g:HTMLPanel ui:field="centerPanel"></g:HTMLPanel>
+                </g:FlowPanel>
+            </g:center>
+        </g:SplitLayoutPanel>
+
+</ui:UiBinder>

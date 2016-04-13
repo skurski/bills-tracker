@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='project'>
+    <!-- Inherit the core Web Toolkit stuff.                        -->
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!-- Inherit the default GWT style sheet.  You can change       -->
+    <!-- the theme of your GWT application by uncommenting          -->
+    <!-- any one of the following lines.                            -->
+    <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+    <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+    <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <set-property name="gwt.logging.logLevel" value="INFO"/>
+    <set-property name="gwt.logging.enabled" value="TRUE"/>
+
+    <!-- Other module inherits                                      -->
+    <inherits name="com.skurski.gwt.demo.shared"/>
+    <!--<inherits name="com.skurski.gwt.demo.server"/>-->
+
+    <!-- Specify the app entry point class.                         -->
+    <entry-point class='com.skurski.gwt.demo.client.app.Project'/>
+    <!--<entry-point class='com.skurski.gwt.demo.client.app.CellTableExample'/>-->
+
+    <!-- build GWT permutations for Chrome only -->
+    <set-property name="user.agent" value="safari"/>
+
+    <!--<stylesheet src="styles/exampleModule.css"/>-->
+
+    <!-- Specify the paths for translatable code                    -->
+    <source path='client'>
+        <!-- Exclude Non-GWTTestCases from compiling, prevents errors -->
+        <exclude name='**/*JTest.java' />
+        <exclude name='**/*GWTTest.java' />
+    </source>
+</module>
