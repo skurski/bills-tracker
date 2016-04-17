@@ -1,18 +1,27 @@
-Bills-Tracker
-=================
+## Bills-Tracker App
 
-Overview
---------
+### Project for educational purpose - overwiew
 
-Project that allows users to track their expenses.
+This is a simple project from functional side:
+* user can login, only basic authentication from server side
+* all expenses are retrieved from server side and display in table
+* user can delete selected expenses
+* user can modify selected expense
+* user can add new expense 
+* no validation is used, no logging
+* the main goal was to practice all the technologies behind
 
-It's based on client - server architecture, Java with Spring on server side as
-RESTful web services and GWT + GWTResty on client side.
+### Architecture
+
+* Server - Client
+* Server -> restful web services
+* Client -> javascript application  
+
+### Technologies 
+
+* Database: HSSQL (for tests in memory version)
+* Server side frameworks: Hibernate, Spring MVC
+* Tests: JUnit 4, Mockito
+* Front-end frameworks: GWT, GWT-Resty
 
 
-Feedback
---------
-
-Feedback is very welcome! You can reach me via:
-
-* Email - peterskurski-AT-gmail.com
